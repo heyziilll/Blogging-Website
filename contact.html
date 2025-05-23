@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Falls of Bicolandia</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(242, 240, 236);
+    margin: 0;
+    padding: 0;
+    }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #29313c;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.logo img {
+    width: 45px; 
+    height: auto;
+    display: block;
+}
+
+
+.contact-container {
+    text-align: center;
+    background: white;
+    padding: 50px;
+    width: 60%;
+    margin: 100px auto;;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #29313c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #3d4c61;
+}
+
+.social-links img {
+    width: 40px;
+    height: auto;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px; 
+}
+
+.social-links a {
+    font-size: 24px;
+    color: #29313c;
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+
+.arrow {
+    position: fixed;
+    right: 20px;
+    background-color: #29313c;
+    color: white;
+    padding: 10px 15px;
+    font-size: 24px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000; 
+}
+
+
+.up {
+    bottom: 80px;
+}
+
+.down {
+    bottom: 20px;
+}
+
+        footer{
+        text-align: center;
+        background-color: #29313c;
+        color: whitesmoke;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+</style>
+
+</head>
+<body>
+
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">
+                 <a href="index.html"><img src="logo.png" alt="The Falls of Bicolandia Logo"></a>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="waterfalls.html">Waterfalls</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+            
+                    
+                </ul>
+            </div>
+        </nav>
+
+  
+    <div class="contact-container">
+        <h2>📞 Contact Us</h2>
+        <p>Have questions about Bicol's waterfalls? Feel free to reach out!</p>
+
+    
+        <div class="contact-info">
+            <p><strong>Email:</strong> info@fallsofbicolandia.com</p>
+            <p><strong>Phone:</strong> +63 912-345-6789</p>
+            <p><strong>Address:</strong> Bicol, Philippines</p>
+        </div>
+
+        <form action="submit_form.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+       
+        <div class="social-links">
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+    <a href="https://twitter.com" class="fa fa-twitter"></a>
+
+        </div>
+    </div>
+
+   
+<a href="#" id="scrollUp" class="arrow up">&#9650;</a>
+
+
+<a href="#" id="scrollDown" class="arrow down">&#9660;</a>
+
+<script>
+    document.getElementById("scrollUp").addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+document.getElementById("scrollDown").addEventListener("click", function() {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+});
+
+</script>
+
+ 
+    <footer>
+        <p>&copy;2025 The Falls of Bicolandia | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
